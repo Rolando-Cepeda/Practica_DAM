@@ -41,9 +41,9 @@ dependencies {
     implementation("com.squareup.picasso:picasso:2.8")
 
     //Recyclerview
-    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    //implementation("androidx.recyclerview:recyclerview:1.3.2")
     // For control over item selection of both touch and mouse driven selection
-    implementation("androidx.recyclerview:recyclerview-selection:1.1.0")
+    //implementation("androidx.recyclerview:recyclerview-selection:1.1.0")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

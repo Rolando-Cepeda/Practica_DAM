@@ -3,6 +3,7 @@ package com.example.practica_recyclerview_rc
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 
@@ -25,8 +26,14 @@ class HeroAdapter (val superhero:List<SuperHero>): RecyclerView.Adapter<HeroAdap
     }
 
     class HeroHolder(val view: View):RecyclerView.ViewHolder(view) {
-        fun render(superhero: SuperHero) {
 
+        val tvRealName: TextView = view.findViewById(R.id.tvRealName)
+        val tvSuperHeroName: TextView = view.findViewById(R.id.tvSuperHeroName)
+        val tvPublisher: TextView = view.findViewById(R.id.tvPublisher)
+        fun render(superhero: SuperHero) {
+            tvRealName.text = superhero.realName
+            tvSuperHeroName.text = superhero.superHeroName
+            tvPublisher.text = superhero.publisher
         }
     }
 }
